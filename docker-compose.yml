@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+  app:
+    # build: .
+    image: teruzoufox/centos-nginx-docker
+    container_name: centos-nginx-docker.app
+    tty: true
+    privileged: true
+    ports:
+      - "8080:80"
+    volumes:
+      - ./share:/share

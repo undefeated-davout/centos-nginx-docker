@@ -1,0 +1,4 @@
+.idea/
+
+share/*
+!/share/.gitkeep
