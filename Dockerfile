@@ -31,7 +31,7 @@ ENV LANG="ja_JP.UTF-8" \
     LC_ALL="ja_JP.UTF-8"
 
 # alias
-RUN echo "alias ll='ls -la -F'" >> ~/.bashrc
+RUN echo "alias ll='ls -lahF --color=auto'" >> ~/.bashrc
 
 # nginx install
 COPY ./nginx/nginx.repo /etc/yum.repos.d/nginx.repo
